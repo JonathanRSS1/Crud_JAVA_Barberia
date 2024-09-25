@@ -63,6 +63,10 @@ public class frmBarberos extends javax.swing.JFrame {
         btnEliminar = new Componentes.Button();
         btnActualizar = new Componentes.Button();
         btnLimpiar = new Componentes.Button();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -156,6 +160,26 @@ public class frmBarberos extends javax.swing.JFrame {
 
         btnLimpiar.setText("Limpiar");
 
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("EDAD");
+
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("NOMBRE");
+
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("CORREO");
+
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("PESO");
+
         javax.swing.GroupLayout bordesRendodeados2Layout = new javax.swing.GroupLayout(bordesRendodeados2);
         bordesRendodeados2.setLayout(bordesRendodeados2Layout);
         bordesRendodeados2Layout.setHorizontalGroup(
@@ -179,25 +203,36 @@ public class frmBarberos extends javax.swing.JFrame {
                                 .addComponent(jLabel6)
                                 .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(bordesRendodeados2Layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(bordesRendodeados2Layout.createSequentialGroup()
-                                                .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(66, 66, 66)
-                                                .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(57, 57, 57)
-                                        .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(bordesRendodeados2Layout.createSequentialGroup()
-                                        .addGap(86, 86, 86)
-                                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(bordesRendodeados2Layout.createSequentialGroup()
                                         .addGap(144, 144, 144)
-                                        .addComponent(jLabel2)))))))
+                                        .addComponent(jLabel2))
+                                    .addGroup(bordesRendodeados2Layout.createSequentialGroup()
+                                        .addGap(12, 12, 12)
+                                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(bordesRendodeados2Layout.createSequentialGroup()
+                                                .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(bordesRendodeados2Layout.createSequentialGroup()
+                                                        .addGap(31, 31, 31)
+                                                        .addComponent(jLabel5))
+                                                    .addGroup(bordesRendodeados2Layout.createSequentialGroup()
+                                                        .addGap(6, 6, 6)
+                                                        .addComponent(jLabel7))
+                                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGroup(bordesRendodeados2Layout.createSequentialGroup()
+                                                .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(bordesRendodeados2Layout.createSequentialGroup()
+                                                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(66, 66, 66)
+                                                        .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(57, 57, 57)
+                                                .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))))
                 .addGap(38, 38, 38))
         );
         bordesRendodeados2Layout.setVerticalGroup(
@@ -212,13 +247,21 @@ public class frmBarberos extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bordesRendodeados2Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(43, 43, 43)
-                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7))
                         .addGap(43, 43, 43)
-                        .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
                         .addGap(44, 44, 44)
-                        .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9))
                         .addGap(38, 38, 38)
-                        .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(bordesRendodeados2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8))
                         .addGap(18, 18, 18)
                         .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bordesRendodeados2Layout.createSequentialGroup()
@@ -293,7 +336,7 @@ public class frmBarberos extends javax.swing.JFrame {
     
     
     private void txtNombreMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNombreMousePressed
-        if (txtNombre.getText().equals("Ingrese su nombre")) {
+        if (txtNombre.getText().equals("")) {
         txtNombre.setText("");
         txtNombre.setForeground(Color.black);
     }
@@ -317,7 +360,7 @@ public class frmBarberos extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreMousePressed
 
     private void txtEdadMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtEdadMousePressed
-     if (txtEdad.getText().equals("Ingrese su Edad")){
+     if (txtEdad.getText().equals("")){
       txtEdad.setText("");
       txtEdad.setForeground(Color.black);
       }  
@@ -343,7 +386,7 @@ public class frmBarberos extends javax.swing.JFrame {
     }//GEN-LAST:event_txtEdadMousePressed
 
     private void txtPesoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPesoMousePressed
-       if (txtPeso.getText().equals("Ingrese su Peso")){
+       if (txtPeso.getText().equals("")){
         txtPeso.setText("");
         txtPeso.setForeground(Color.black);
     }
@@ -369,7 +412,7 @@ public class frmBarberos extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPesoMousePressed
 
     private void txtCorreoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtCorreoMousePressed
-     if(txtCorreo.getText().equals("Ingrese su Correo")){
+     if(txtCorreo.getText().equals("")){
      txtCorreo.setText("");
      txtCorreo.setForeground(Color.black);
      }
@@ -437,7 +480,7 @@ public class frmBarberos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmBarberos().setVisible(true);
+                initFrmBarberos();
             }
         });
     }
@@ -452,7 +495,11 @@ public class frmBarberos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtbBarbero;
     public Componentes.TextField txtCorreo;
